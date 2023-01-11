@@ -1,0 +1,10 @@
+aiogram==2.24
+comtypes==1.1.14
+moviepy==1.0.3
+pikepdf==6.2.8.post1
+Pillow==9.4.0
+pyAesCrypt==6.0.0
+pytesseract==0.3.10
+pywin32==300
+rarfile==4.0
+translatepy==2.3

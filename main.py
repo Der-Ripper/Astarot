@@ -222,7 +222,8 @@ async def load_photo_to_extract_text_func(message: types.Message, state: FSMCont
         data["name"] = f"photo"
     await message.photo[-1].download(data["path"] + data["name"])
     await message.answer("And now the task is more difficult, decide on the language in the photo and "
-                         "send it to me {eng, rus, fra...} or click on the button", reply_markup=get_empty_keyboard())
+                         "send it to me {eng, rus, fra...} or click on the button", 
+                         reply_markup=get_translation_keyboard())
     await BotStates.extract_text_lang_state.set()
 
 
